@@ -1,4 +1,4 @@
-# Projetos AppClassLibraryDomain
+# Projeto AppClassLibraryDomain
 Este é uma bibliotece de classes Clients/DTO para outros projetos em C#.
 
 ## 📌 Versão em continuo desenvolvimento
@@ -25,7 +25,7 @@ $ System.Numerics.Vectors 4.5.0
 ### 
 $ System.Runtime.CompilerServices.Unsafe 4.5.3
 
-### Projeto de classes dominio para converter em DTO
+### Projeto de classes dominio
 * [AppClassLibraryDomain](https://github.com/srgeverson/AppClassLibraryDomain)
 
 ```
