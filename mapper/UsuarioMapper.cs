@@ -2,6 +2,7 @@
 using AppClassLibraryDomain.model;
 using AutoMapper;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AppClassLibraryClient.mapper
 {
@@ -21,10 +22,10 @@ namespace AppClassLibraryClient.mapper
             return mapper.Map<UsuarioLoginResponse>(usuario);
         }
 
-        public List<UsuarioResponse> ToListResponse(List<Usuario> usuarios)
+        public IList<UsuarioResponse> ToListResponse(IList<Usuario> usuarios)
         {
             var usuarioResponses = new List<UsuarioResponse>();
-            usuarios.ForEach(usuario => usuarioResponses.Add(ToResponse(usuario)));
+            usuarios.ToList().ForEach(usuario => usuarioResponses.Add(ToResponse(usuario)));
             return usuarioResponses;
         }
 
@@ -39,7 +40,7 @@ namespace AppClassLibraryClient.mapper
             return mapper.Map<Usuario>(usuarioRequest);
         }
 
-        public List<Usuario> ToListModel(List<UsuarioRequest> usuarioRequests)
+        public IList<Usuario> ToListModel(List<UsuarioRequest> usuarioRequests)
         {
             var usuarios = new List<Usuario>();
             usuarioRequests.ForEach(usuarioRequest => usuarios.Add(ToModel(usuarioRequest)));

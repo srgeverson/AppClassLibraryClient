@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="mapper\PermissaoMapper.cs" />
     <Compile Include="mapper\UsuarioMapper.cs" />
-    <Compile Include="model\PayloadToken.cs" />
     <Compile Include="model\PermissaoResponse.cs" />
     <Compile Include="model\Pessoa.cs" />
     <Compile Include="model\TokenValidado.cs" />
@@ -66,6 +65,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="NuGet.config" />
     <None Include="packages.config" />
   </ItemGroup>
