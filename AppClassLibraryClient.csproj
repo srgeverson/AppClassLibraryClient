@@ -43,6 +43,7 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,7 +56,7 @@
     <Compile Include="mapper\UsuarioMapper.cs" />
     <Compile Include="model\PermissaoResponse.cs" />
     <Compile Include="model\Pessoa.cs" />
-    <Compile Include="model\TokenValidado.cs" />
+    <Compile Include="model\ResponseDefaultDTO.cs" />
     <Compile Include="model\UsuarioLogado.cs" />
     <Compile Include="model\UsuarioLogin.cs" />
     <Compile Include="model\UsuarioLoginRequest.cs" />
