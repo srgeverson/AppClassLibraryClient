@@ -14,7 +14,7 @@ namespace AppClassLibraryClient.model
         [Required]
         [DataMember(Name = "email")]
         [JsonProperty(PropertyName = "email")]
-        [StringLength(2, ErrorMessage = "A quantidade máxima de caracteres é 255. ")]
+        [StringLength(255, ErrorMessage = "A quantidade máxima de caracteres é 255. ")]
         [DefaultValue("")]
         public string Email { get; set; }
 
